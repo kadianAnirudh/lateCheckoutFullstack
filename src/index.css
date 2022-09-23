@@ -1,0 +1,106 @@
+body{
+  font-family: 'Space Mono', monospace;
+  background-image: url("./assets/background.png");
+  overflow-y: scroll;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.parent{
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.child1{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+table{
+  color:black;
+  background-color: #ebf9fe;
+  border-bottom: 5px solid #F617BD;
+  border-right: 5px solid #F617BD;
+  border-left: 5px solid #03EFCB;
+  border-top: 5px solid #03EFCB;
+  width: 80%;
+  margin-bottom: 40px;
+  height: 50vh;
+  overflow: scroll;
+}
+
+.leadtext{
+  font-size:60px;
+  font-family: 'Common Pixel', sans-serif;
+  src:url('http://fonts.cdnfonts.com/css/common-pixel');
+}
+
+.tableHolder{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 80%;
+}
+
+
+.button1, .button2{
+  height: 57px;
+  width: 215px;
+  color: black;
+  font-weight:900;
+  font-size: 20px;
+  border-radius: 10px;
+
+}
+
+.button1{
+  background-color: #03EFCB;
+  margin-right: 20px;
+}
+
+.button2{
+  background-color: #FFFFFF;
+  margin-left: 20px;
+}
+
+.child2{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:50px;
+}
+
+@media only screen and (max-width: 550px){
+  .leadtext{
+    font-size:40px;
+  }
+
+  .button1,.button2{
+    width:180px;
+    height:60px;
+    border-radius:5px;
+  font-size: 20px;
+  margin: 0 0;
+  margin-bottom: 15px;
+}
+
+.child2{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  overflow: visible;
+}
+
+.address1, .address2{
+  display: none;
+}
+
+table{
+  padding-top: 0;
+  margin-bottom: 60px;
+}
+}
